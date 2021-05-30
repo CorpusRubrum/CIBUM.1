@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIBUM</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+</head>
+<body>
+    <a-scene>
+       <a-plane position="1.74141 0.002 -5.469" rotation="-90 0 0" width="4" height="4" src="./piel.jpeg" material="" geometry="" scale="500 500 500"></a-plane>
+       
+        <a-sky color="#000000"></a-sky>
+
+        <a-assets>
+         
+
+            <img id="imag" src="./piel1.png">
+
+
+            <a-asset-item id="pared" src="./pielpaperedes.gltf" ></a-asset-item>
+            <a-asset-item id="pared1" src="./pielpared.gltf" ></a-asset-item>
+            <a-asset-item id="pared2" src="./pielparedes2.gltf" ></a-asset-item>
+            <a-asset-item id="pared3" src="./pielpartes.gltf" ></a-asset-item>
+
+
+          </a-assets>
+        
+          <a-image src="#imag" material="" geometry=""scale="80 80 80" position=" 0.9 21.6 -48"></a-image>
+
+
+
+
+
+          <a-gltf-model src="#pared" material="" geometry=""scale="1 1 1" position=" -41.5 -9.3 4.5"></a-gltf-model>
+          <a-gltf-model src="#pared2" material="" geometry=""scale="1 1 1" position=" 21 -3.2 3.4"></a-gltf-model>
+          <a-gltf-model src="#pared3" material="" geometry=""scale="1.5 1.5 1.5" position=" 0  -3.5 -5.8"></a-gltf-model>
+          <a-gltf-model src="#pared3" material="" geometry=""scale="1.5 1.5 1.5" position=" 0  -3.5 -5.8" rotation="-180 -11.119 -180"></a-gltf-model>
+       
+         
+          <a-entity camera="" position="-5.51033 1.6 45.65222" wasd-controls="" rotation="" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+
+          <a-light type="ambient" color="#FEF09C"></a-light>
+          <a-entity light="color: #BBB; type: ambient" data-aframe-default-light="" aframe-injected="" scale="30 30 30" position=" 60  85 0"></a-entity>
+
+        </a-scene>
+
+
+
+
+</body>
+</html>
